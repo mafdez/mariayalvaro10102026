@@ -214,23 +214,41 @@
       padding-bottom: 2px;
     }
 
+    /* Lista de boda */
+    .gift-note{
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .gift-note p{
+      margin: 0 0 14px;
+    }
+
+    .gift-link{
+      text-decoration: none;
+      border-bottom: 1px solid rgba(43,43,43,.20);
+      padding-bottom: 2px;
+    }
+
+    .bank-note{
+      margin-top: 10px;
+      font-size: 14px;
+      color: rgba(43,43,43,.58);
+      letter-spacing: .2px;
+    }
+
     /* RSVP */
     .rsvp-note{
       color: var(--muted);
       margin: 0 0 14px;
     }
-    .iframe-wrap{
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid rgba(43,43,43,.12);
-      background: rgba(255,255,255,.72);
-    }
-    iframe{
-      width: 100%;
-      height: 980px;
-      border: 0;
-      display: block;
-      background: white;
+
+    .phone-link{
+      text-decoration: none;
+      border-bottom: 1px solid rgba(43,43,43,.20);
+      padding-bottom: 2px;
     }
 
     footer{
@@ -244,7 +262,6 @@
     @media (max-width: 860px){
       .hero-grid{ grid-template-columns: 1fr; }
       .card{ grid-column: span 12; }
-      iframe{ height: 1050px; }
     }
 
     @media (prefers-reduced-motion: reduce){
@@ -275,6 +292,7 @@
           <div class="cta-row">
             <a class="btn primary" href="#rsvp" title="Ir a confirmar asistencia">Confirmar asistencia</a>
             <a class="btn" href="#lugares" title="Ver ubicaciones">Ver ubicaciones</a>
+            <a class="btn" href="#regalo" title="Ver lista de boda">Lista de boda</a>
           </div>
 
           <div class="divider" role="presentation"></div>
@@ -325,26 +343,52 @@
       </div>
     </section>
 
-    <!-- RSVP -->
+    <!-- LISTA DE BODA -->
+    <section class="section" id="regalo">
+      <h2>Lista de boda</h2>
+      <div class="gift-note">
+        <p>
+          Lo más importante es vuestra presencia y que celebremos juntos este sacramento.
+        </p>
+        <p>
+          Aun así, si queréis realizar un regalo, podéis encontrar la lista de boda en el siguiente link:
+          <a class="gift-link" target="_blank" rel="noopener"
+             href="https://www.elcorteingles.es/listas/bodamas/eventos/djrkip-boda-de-maria-y-alvaro-fernandez-de-cordova-allende/">
+            Lista de boda
+          </a>
+        </p>
+        <p class="bank-note">
+          También os dejamos, de forma discreta, nuestro número de cuenta:
+          <strong>ESXXXXXXXXXXXXXXX</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- CONFIRMACIÓN -->
     <section class="section" id="rsvp">
       <h2>Confirmación de asistencia</h2>
       <p class="rsvp-note">
-        Para ayudarnos con la organización, por favor confirma tu asistencia a través del formulario:
+        Se ruega confirmación de asistencia contactando directamente con María o Álvaro:
       </p>
 
-      <div class="cta-row" style="margin: 0 0 14px;">
-        <a class="btn primary" target="_blank" rel="noopener"
-           href="https://docs.google.com/forms/d/e/1FAIpQLScql6BHkNpIPXgVbddruNpgv1-Iid4sYxK7MfuRTyh6Iy2rIg/viewform?usp=sf_link">
-          Abrir formulario en una pestaña
-        </a>
-        <a class="btn" href="#inicio">Volver arriba</a>
+      <div class="grid">
+        <article class="card">
+          <h3>María</h3>
+          <p>
+            <a class="phone-link" href="tel:+34660983480"><strong>660 983 480</strong></a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Álvaro</h3>
+          <p>
+            <a class="phone-link" href="tel:+34690073872"><strong>690 073 872</strong></a>
+          </p>
+        </article>
       </div>
 
-      <div class="iframe-wrap" aria-label="Formulario de confirmación">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScql6BHkNpIPXgVbddruNpgv1-Iid4sYxK7MfuRTyh6Iy2rIg/viewform?embedded=true"
-          loading="lazy">
-        </iframe>
+      <div class="cta-row" style="margin-top: 18px;">
+        <a class="btn" href="#inicio">Volver arriba</a>
       </div>
     </section>
 
