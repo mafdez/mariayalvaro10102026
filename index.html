@@ -498,6 +498,12 @@
       font-size: 17px;
     }
 
+    .iban-nowrap{
+      white-space: nowrap;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
     .account-note{
       margin-top: 10px;
       color: rgba(47,41,38,.62);
@@ -513,6 +519,14 @@
       color: var(--muted);
       max-width: 760px;
       font-size: 17px;
+    }
+
+    .rsvp-deadline{
+      display: inline-block;
+      font-size: clamp(22px, 2.4vw, 30px);
+      line-height: 1.25;
+      font-weight: 700;
+      color: var(--ink);
     }
 
     .contact-card{
@@ -780,15 +794,11 @@
         </p>
 
         <p class="gift-text">
-          Aun así, si queréis realizar un regalo, podéis encontrar la lista de boda en el siguiente link:
+          Aun así, si queréis realizar un regalo, este es nuestro número de cuenta: <span class="iban-nowrap">ES51&nbsp;0182&nbsp;5322&nbsp;2200&nbsp;0395&nbsp;1684</span>. También podéis encontrar nuestra lista de boda en el siguiente link:
           <a class="gift-link" target="_blank" rel="noopener"
              href="https://www.elcorteingles.es/listas/bodamas/eventos/djrkip-boda-de-maria-y-alvaro-fernandez-de-cordova-allende/">
             <strong>pincha aquí</strong>
           </a>
-        </p>
-
-        <p class="account-note">
-          <strong>ES51 0182 5322 2200 0395 1684</strong>
         </p>
       </div>
     </section>
@@ -797,7 +807,8 @@
       <div class="section-head">
         <h2>Confirmación de asistencia</h2>
         <p>
-          Se ruega confirmación antes del 10 de septiembre contactando directamente con María o Álvaro.
+          <strong class="rsvp-deadline">Se ruega confirmación antes del 10 de septiembre.</strong><br>
+          Contactad directamente con María o Álvaro.
         </p>
       </div>
 
